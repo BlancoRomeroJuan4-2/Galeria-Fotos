@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanco Romero - Fotos</title>
+  <link rel="stylesheet" href="static/css/estilos.css">
+</head>
+<body>
+  <h1>Práctica Fotográfica y Responsiva</h1>
+  <p>Tres estilos: Horizontal, vertical y tipo abanico.</p>
+
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">Juegos & Galería</div>
+      <button class="menu-toggle">☰</button>
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#galeria-clasica">Galería clásica</a>
+        <a href="#galeria-vertical">Galería vertical</a>
+        <a href="#galeria-abanico">Galería abanico</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="galeria-clasica" class="section">
+    <div class="container">
+      <h2>Galería clásica (grid fluido)</h2>
+      <div class="grid galeria">
+        <img src="static/assets/images/j1.jpg" alt="Iamgen 1">
+        <img src="static/assets/images/j2.jpg" alt="Iamgen 2">
+        <img src="static/assets/images/j3.jpg" alt="Iamgen 3">
+        <img src="static/assets/images/evidencia1.png" alt="Evidencia 1">
+        <img src="static/assets/images/evidencia2.png" alt="Evidencia 2">
+        <img src="static/assets/images/evidencia3.png" alt="Evidencia 3">
+        <img src="static/assets/images/evidencia4.png" alt="Evidencia 4">
+        <img src="static/assets/images/evidencia5.png" alt="Evidencia 5">
+        <img src="static/assets/images/evidencia6.jpg" alt="Evidencia 6">
+        <img src="static/assets/images/evidencia7.jpg" alt="Evidencia 7">
+        <img src="static/assets/images/evidencia8.jpg" alt="Evidencia 8">
+        <img src="static/assets/images/evidencia9.jpg" alt="Evidencia 9">
+        <img src="static/assets/images/evidencia10.jpg" alt="Evidencia 10">
+        <img src="static/assets/images/evidencia11.png" alt="Evidencia 11">
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria-verical" class="section alt">
+    <h2>Galería vertical (scroll suave)</h2>
+    <div class="vercial galeria">
+      <img src="static/assets/images/j3.jpg" alt="Imagen 3">
+      <img src="static/assets/images/j4.jpg" alt="Imagen 4">
+      <img src="static/assets/images/j5.jpeg" alt="Imagen 5">
+    </div>
+  </section>
+
+  <section id="galeria-abanico" class="section">
+    <div class="abanico galeria">
+      <figure class="card">
+        <img src="static/assets/images/j1.jpg">
+        <figcaption>Abanico 1</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="static/assets/images/j2.jpg">
+        <figcaption>Abanico 2</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="visor" id="visor">
+    <button id="closeVisor">×</button>
+    <button id="prevVisor">‹</button>
+    <img id="visorImg" alt="Imagen aplicada">
+    <button id="nextVisor">›</button>
+  </div>
+
+  <footer class="site-footer">
+    <p>© <span id="year">Práctica Fotográfica - Blanco Romero Juan</span></p>
+  </footer>
+
+  <script src="static/js/script.js"></script>
+</body>
+</html>
